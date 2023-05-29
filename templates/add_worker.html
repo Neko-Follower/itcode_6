@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДЗ 5</title>
+</head>
+<body style="margin: 0">
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="workers.html">Список сотрудников</a></li>
+      <li><a href="best_worker.html">Сотрудник месяца</a></li>
+      <li><a href="add_worker.html">Добавить сотрудника</a></li>
+      <li id="about"><a href="about.html">О нас</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <form>
+    <h1>Добавить сотрудника</h1>
+    <p>
+      <input id="surname" placeholder="Фамилия" required>
+    </p>
+    <p>
+      <input id="name" placeholder="Имя" required>
+    </p>
+    <p>
+      <input id="patronymic" placeholder="Отчество" required>
+    </p>
+    <p>
+      <select id="position" required>
+        <option value="Начальник">Начальник</option>
+        <option value="Менеджер">Менеджер</option>
+        <option value="Офисный сотрудник">Офисный сотрудник</option>
+      </select>
+    </p>
+    <p>
+      <input id="address" placeholder="Адрес" required>
+    </p>
+    <p>
+      <input id="phone" placeholder="Телефон" required>
+    </p>
+    <p>
+      <input type="email" id="email" placeholder="Электронная почта" required>
+    </p>
+    <p>
+      <textarea placeholder="О вас"></textarea>
+    </p>
+    <button type="submit">Добавить</button>
+  </form>
+</main>
+</body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    height: 35px;
+  }
+
+  nav {
+    height: 35px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 35px;
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+    border-right: 1px solid white;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+
+  li a:hover {
+    background-color: mediumpurple;
+  }
+
+  #about {
+    float: right;
+    border-left: 1px solid white;
+    border-right: none;
+  }
+
+  form {
+    text-align: center;
+  }
+  input, select, textarea, button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+  }
+</style>
